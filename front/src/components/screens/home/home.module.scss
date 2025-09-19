@@ -1,0 +1,7 @@
+@use '@/styles/variables';
+
+.home {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: variables.$gap;
+}

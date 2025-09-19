@@ -1,0 +1,39 @@
+@use '@/styles/variables';
+@use '@/styles/mixins';
+@use "sass:color";
+
+.user-item {
+  @include mixins.flex-horizontal-center;
+  padding: 7px 15px;
+  background-color: variables.$bg-block;
+  border-radius: 13px;
+  color: variables.$white;
+  font-size: 17px;
+  
+  &:disabled {
+    cursor: default;
+  }
+
+  &:not(:disabled) {
+    @include mixins.transition(background-color);
+
+    &:hover {
+      background-color: color.scale(variables.$gray, $lightness: 7%);
+    }
+  }
+
+  &.gray {
+    background-color: variables.$gray;
+  }
+
+  > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  > span {
+    margin-left: 5px;
+  }
+}

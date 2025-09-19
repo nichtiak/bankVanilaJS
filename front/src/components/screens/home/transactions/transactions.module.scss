@@ -1,0 +1,5 @@
+@use '@/styles/mixins';
+
+.transactions {
+  @include mixins.dashboard-section;
+}
