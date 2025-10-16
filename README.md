@@ -1,4 +1,4 @@
-# [Банковская страничка](http://bank-js-pet.ru/)
+# [Банковская страничка](http://bank-pet.bank-js-pet.ru/)
 
 Стек: JavaScript, для фейковых данных faker.js
 
